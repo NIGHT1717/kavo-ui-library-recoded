@@ -203,31 +203,31 @@ function Kavo.CreateLib(kavName, themeList)
     local MainSide = Instance.new("Frame")
     local sideCorner = Instance.new("UICorner")
     local coverup_2 = Instance.new("Frame")
-    -- ScrollingFrame вместо обычного Frame для списка табов
-local tabFrames = Instance.new("ScrollingFrame")
-local tabListing = Instance.new("UIListLayout")
-local tabPadding = Instance.new("UIPadding")
+    -- ScrollingFrame вместо обычного     Frame для списка табов
+    local tabFrames = Instance.new("ScrollingFrame")
+    local tabListing = Instance.new("UIListLayout")
+    local tabPadding = Instance.new("UIPadding")
 
-tabFrames.Name = "tabFrames"
-tabFrames.Parent = MainSide -- оставь текущий parent из оригинала
-tabFrames.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-tabFrames.BackgroundTransparency = 1.000
-tabFrames.Position = UDim2.new(0.0438990258, 0, -0.00066378375, 0) -- при необходимости поправь
-tabFrames.Size = UDim2.new(0, 135, 0, 283) -- при необходимости поправь
-tabFrames.ScrollBarThickness = 6
-tabFrames.CanvasSize = UDim2.new(0, 0, 0, 0)
-tabFrames.VerticalScrollBarInset = Enum.ScrollBarInset.ScrollBar
-tabFrames.AutomaticCanvasSize = Enum.AutomaticSize.Y
+    tabFrames.Name = "tabFrames"
+    tabFrames.Parent = MainSide -- оставь текущий parent из оригинала
+    tabFrames.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    tabFrames.BackgroundTransparency = 1.000
+    tabFrames.Position = UDim2.new(0.0438990258, 0, -0.00066378375, 0)
+    tabFrames.Size = UDim2.new(0, 135, 0, 283) -- при необходимости поправь
+    tabFrames.ScrollBarThickness = 6
+    tabFrames.CanvasSize = UDim2.new(0, 0, 0, 0)
+    tabFrames.VerticalScrollBarInset = Enum.ScrollBarInset.ScrollBar
+    tabFrames.AutomaticCanvasSize = Enum.AutomaticSize.Y
 
-tabListing.Name = "tabListing"
-tabListing.Parent = tabFrames
-tabListing.SortOrder = Enum.SortOrder.LayoutOrder
-tabListing.Padding = UDim.new(0, 4)
+    tabListing.Name = "tabListing"
+    tabListing.Parent = tabFrames
+    tabListing.SortOrder = Enum.SortOrder.LayoutOrder
+    tabListing.Padding = UDim.new(0, 4)
 
-tabPadding.PaddingLeft = UDim.new(0, 6)
-tabPadding.PaddingTop = UDim.new(0, 6)
-tabPadding.PaddingBottom = UDim.new(0, 6)
-tabPadding.Parent = tabFrames
+    tabPadding.PaddingLeft = UDim.new(0, 6)
+    tabPadding.PaddingTop = UDim.new(0, 6)
+    tabPadding.PaddingBottom = UDim.new(0, 6)
+    tabPadding.Parent = tabFrames
 
 -- Обновление CanvasSize по содержимому
 local function UpdateTabCanvas()
